@@ -1,0 +1,15 @@
+{% extends "based.html" %}
+{% block content %}
+          <div class="inner cover">
+            <h1 class="cover-heading">Upload Your File</h1>
+            <p class="lead">Encrypt your file, but there is no Decrypt feature !!!</p>
+        
+            <form action="{{ url_for('upload') }}" method="post" enctype="multipart/form-data">
+                <input type="file" id="files" name="files" multiple="multiple" />
+                <p style="text-align: right; margin-top: 20px;">
+                    <input type="submit" value="Upload Files" class="btn btn-md btn-primary" />
+                </p>
+            </form>
+
+          </div>
+{% endblock %}
